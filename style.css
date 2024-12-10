@@ -1,0 +1,100 @@
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    /* background: linear-gradient(to bottom, #003973, #005f99); */
+    background-image: url('https://img.freepik.com/free-vector/gradient-mountain-landscape_23-2149159770.jpg?t=st=1733860328~exp=1733863928~hmac=092fff892bd68cc980f77ef222af344f13b0834a196d47e37790adb44d799d28&w=996');
+    background-size: cover; /* Ensures the image covers the entire screen */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Weather container card styling */
+.weather-container {
+    background: rgba(255, 255, 255, 0.5); /* 50% opacity white */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: blur(10px); /* Adds a frosted glass effect */
+}
+
+/* Weather icon styling */
+.weather-container .icon {
+    margin-bottom: 15px;
+}
+
+.weather-container .weather-icon {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+/* Weather details styling */
+.weather-container p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: #003973; /* Dark shade of blue for text */
+    font-weight: 500;
+}
+
+.weather-container .temperature p {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #001f33; /* Darker blue for temperature */
+}
+
+.weather-container .location p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #005f99; /* Lighter blue for location */
+}
+
+/* Navigation styling */
+nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .search {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+    color: #003973;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+nav button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background: #003973; /* Dark blue button */
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+nav button:hover {
+    background: #005f99; /* Slightly lighter blue on hover */
+}
